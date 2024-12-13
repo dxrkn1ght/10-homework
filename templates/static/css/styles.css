@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h3 {
+    color: #2c3e50;
+}
+
+.task-card {
+    background: #ffffff;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.btn-update {
+    color: #fff;
+    background-color: #3498db;
+    padding: 5px 10px;
+    border-radius: 3px;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.btn-delete {
+    color: #fff;
+    background-color: #e74c3c;
+    padding: 5px 10px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.btn-update:hover, .btn-delete:hover {
+    opacity: 0.8;
+}

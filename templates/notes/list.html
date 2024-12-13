@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes List</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <h1>Notes</h1>
+    <a href="/notes/create/">Create Note</a>
+    <a href="{% url 'home' %}" class="btn btn-primary">Back to Home</a>
+    <ul>
+        {% for note in notes %}
+        <div>
+            <h3><a href="{% url 'note_detail' pk=notes.pk %}">{{ note.title }}</a></h3>
+        </div>
+
+            <li>
+                {{ note.title }}
+                <a href="{{ note.id }}/update/">Update</a>
+                <a href="{{ note.id }}/delete/">Delete</a>
+            </li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
